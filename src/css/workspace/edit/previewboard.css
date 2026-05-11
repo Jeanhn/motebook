@@ -1,0 +1,86 @@
+/* PreviewBoard.css */
+.PreviewBoard {
+    color: #1e293b;
+    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* 预览模块间距 */
+.PreviewBoard>div {
+    margin-bottom: 1.5rem;
+}
+
+/* 预览模块标题 */
+.PreviewBoard h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e40af;
+    /* 统一深蓝色标题 */
+    margin: 0 0 0.8rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #93c5fd;
+    /* 统一蓝色下划线 */
+}
+
+/* 个人信息预览 */
+.PersonalPreviewZone {
+    text-align: left;
+}
+
+.PersonalPreviewZone h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 0.5rem 0;
+}
+
+.PersonalPreviewZone p {
+    margin: 0.2rem 0;
+    font-size: 14px;
+    color: #475569;
+}
+
+/* 列表样式 */
+.PreviewBoard ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.PreviewBoard li {
+    font-size: 14px;
+    color: #334155;
+    margin-bottom: 0.4rem;
+}
+
+/* 技能标签样式 */
+.SkillPreviewZone span {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 13px;
+    margin: 0 0.35rem 0.4rem 0;
+}
+
+/* 教育/工作/实习条目 */
+.PreviewBoard .item {
+    margin-bottom: 0.9rem;
+}
+
+.PreviewBoard .item .title {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.PreviewBoard .item .time {
+    font-size: 13px;
+    color: #64748b;
+    margin-left: 0.5rem;
+}
+
+.PreviewBoard .item .desc {
+    font-size: 14px;
+    color: #475569;
+    margin-top: 0.2rem;
+}

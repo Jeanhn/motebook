@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useParams } from "react-router";
 import PreviewBoard from "./edit/previewboard";
 import EditBoard from "./edit/editboard";
+import "../css/workspace/editpage.css"
+
 
 function EditPage() {
 

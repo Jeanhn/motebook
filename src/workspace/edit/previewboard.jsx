@@ -1,4 +1,5 @@
 import PersonalTemplate from "./template/personaltemplate"
+import "../../css/workspace/edit/previewboard.css"
 
 function PreviewBoard({
     personalInfo,

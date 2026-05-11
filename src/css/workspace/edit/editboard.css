@@ -1,0 +1,89 @@
+/* EditBoard.css */
+.EditBoard {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* 模块标题样式 */
+.EditBoard>div h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e40af;
+    /* 深蓝色标题 */
+    margin: 0 0 0.7rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #93c5fd;
+    /* 蓝色下划线 */
+}
+
+/* 编辑模块容器：明显的浅蓝色背景，增强区分 */
+.PersonalAddEditZone,
+.SkillAddEditZone,
+.EducationAddEditZone,
+.CareerAddEditZone,
+.InternAddEditZone {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f0f7ff;
+    /* 浅蓝色模块背景 */
+    border: 1px solid #bfdbfe;
+    transition: all 0.2s ease;
+}
+
+/* 鼠标悬停时加深边框，提升交互感 */
+.PersonalAddEditZone:hover,
+.SkillAddEditZone:hover,
+.EducationAddEditZone:hover,
+.CareerAddEditZone:hover,
+.InternAddEditZone:hover {
+    border-color: #60a5fa;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+}
+
+/* 表单输入样式 */
+.EditBoard input,
+.EditBoard textarea {
+    width: 100%;
+    padding: 0.55rem 0.75rem;
+    margin: 0.35rem 0 0.7rem 0;
+    border: 1px solid #93c5fd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.EditBoard input:focus,
+.EditBoard textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.EditBoard textarea {
+    resize: vertical;
+    min-height: 65px;
+}
+
+/* 按钮样式 */
+.EditBoard button {
+    padding: 0.45rem 0.9rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.EditBoard button:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+}
+
+.EditBoard button:active {
+    transform: translateY(0);
+}

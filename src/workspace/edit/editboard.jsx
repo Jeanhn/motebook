@@ -1,6 +1,7 @@
 import { useState } from "react";
 import template from "./template/personaltemplate.jsx"
 import PersonalSource from "./source/personalsource.jsx";
+import "../../css/workspace/edit/editboard.css"
 
 function EditBoard({
     personalInfo, personalInfoSetter,

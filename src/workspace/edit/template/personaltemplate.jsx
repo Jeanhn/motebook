@@ -15,6 +15,9 @@ function PersonalTemplate({ personalInfo }) {
         <span className="PersonalCity">现居城市</span>
         <span className="PersonalCityValue">{personalInfo.PersonalCity}</span>
 
+        <span className="PersonalExpect">期望</span>
+        <span className="PersonalExpectValue">{personalInfo.PersonalExpect}</span>
+
     </div>)
 }
 

@@ -4,12 +4,26 @@ import PreviewBoard from "./edit/previewboard";
 import EditBoard from "./edit/editboard";
 
 function EditPage() {
-    const params = useParams();
-    const [templateSource, templateSetter] = useState()
+
+    const [personalInfo, personalInfoSetter] = useState({})
+    const [skillInfo, skillInfoSetter] = useState([])
+    const [educationInfo, educationInfoSetter] = useState([])
+    const [careerInfo, careerInfoSetter] = useState([])
+    const [internInfo, internInfoSetter] = useState([])
+
     return (
         <div className="EditPage">
-            <PreviewBoard templateSetter={templateSetter} />
-            <EditBoard />
+            <EditBoard personalInfo={personalInfo} personalInfoSetter={personalInfoSetter}
+                skillInfo={skillInfo} skillInfoSetter={skillInfoSetter}
+                educationInfo={educationInfo} educationInfoSetter={educationInfoSetter}
+                careerInfo={careerInfo} careerInfoSetter={careerInfoSetter}
+                internInfo={internInfo} internInfoSetter={internInfoSetter} />
+
+            <PreviewBoard personalInfo={personalInfo}
+                skillInfo={skillInfo}
+                educationInfo={educationInfo}
+                careerInfo={careerInfo}
+                internInfo={internInfo} />
         </div>
     );
 }

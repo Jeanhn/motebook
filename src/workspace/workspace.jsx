@@ -1,6 +1,10 @@
+import OperationTab from "./operationtab"
+import View from "./view"
+
 function WorkSpace() {
     return (<div className="WorkSpace">
-        work
+        <OperationTab></OperationTab>
+        <View></View>
     </div>)
 }
 
